@@ -1,0 +1,36 @@
+@import "../../styles/colors";
+
+.button {
+  padding: 8px;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__primary {
+  background-color: $indigo500;
+  color: $indigo100;
+}
+
+.button__secondary {
+  background-color: transparent;
+  border: 1px solid $indigo500;
+  color: $indigo500;
+
+  &:hover {
+    background-color: $indigo500;
+    color: $indigo100;
+  }
+}
+
+.button__success {
+  background-color: $emerald500;
+  color: $indigo100;
+}
+
+.button__danger {
+  background-color: $rose600;
+  color: $indigo100;
+}
