@@ -1,0 +1,59 @@
+@import "./styles/colors";
+
+.container{
+  display: flex;
+  justify-content: center;
+
+  > div {
+    width: 50%;
+
+    header {
+      display: flex;
+      justify-content: space-between;
+
+      padding-block: 8px;
+    };
+  }
+
+  table {
+    width: 100%;
+
+    th {
+      text-align: left;
+      padding: 8px;
+      background-color: $indigo500;
+      color: $indigo100;
+    }
+
+    tbody tr {
+      padding: 16px;
+      &:nth-child(odd){
+        background-color: $indigo100;
+      }
+
+      td {
+        padding: 8px;
+
+        &:last-child {
+          display: flex;
+          justify-content: space-evenly;
+        }
+      }
+    }  
+  }
+}
+
+.container__search__bar {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  label {
+    flex: 1;
+  }
+
+  button {
+    width: 250px;
+  }
+}
