@@ -41,6 +41,15 @@
       }
     }  
   }
+
+  form {
+    position: fixed;
+    right: 250px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 
 .container__search__bar {

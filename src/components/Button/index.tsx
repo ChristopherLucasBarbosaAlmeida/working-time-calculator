@@ -14,14 +14,14 @@ const variants = {
 };
 
 export function Button(props: ButtonProps) {
-  const { children, variant, ...rest } = props;
+  const { children, variant } = props;
 
   return (
     <button
       className={`${styles.button} ${variants[variant]}`}
-      {...rest}
+      {...props}
     >
-      <>{children}</>
+      {children}
     </button>
   );
 }
